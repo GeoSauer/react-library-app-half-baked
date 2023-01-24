@@ -7,11 +7,11 @@ function App() {
   return (
     <main className="container">
       <Switch>
-        {/* <Route exact path="/">
+        <Route exact path="/">
           <Link to={`/books`}>
             <h1>Library Catalog</h1>
           </Link>
-        </Route> */}
+        </Route>
         <Route exact path="/books" component={BookList} />
         <Route path="/books/:id" component={BookDetail} />
       </Switch>
